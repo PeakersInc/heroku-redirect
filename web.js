@@ -9,6 +9,18 @@ app.get('*', function(request, response) {
   response.redirect(redirectStatus, newBaseURL + request.url);
 });
 
+app.post('*', function(request, response) {
+  response.redirect(redirectStatus, newBaseURL + request.url);
+});
+
+app.put('*', function(request, response) {
+  response.redirect(redirectStatus, newBaseURL + request.url);
+});
+
+app.delete('*', function(request, response) {
+  response.redirect(redirectStatus, newBaseURL + request.url);
+});
+
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
